@@ -4,84 +4,118 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Justin Cordova</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.jpeg" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Cabin&display=swap">
-
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.jpeg"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Cabin&display=swap"
+    />
   </head>
-  <body>
-    <!-- Cursor dot 
-    <div class="cursor-dot" id="custom-cursor"></div> -->
-    <!-- Background video 
-    <video autoplay muted loop id="bg-video">
-      <source src="video/background.mp4" type="video/mp4" />
-      <source src="video/background.webm" type="video/webm" />
-      Your browser does not support the video tag.
-    </video> -->
+  <!-- Header Background -->
+  <div class="header-bg"></div>
 
+  <body id="home">
     <!-- Header -->
     <header>
-      <h1>
-        <span>j</span><span>u</span><span>s</span><span>t</span><span>i</span><span>n</span>
-        <span> </span>
-        <span>c</span><span>o</span><span>r</span><span>d</span><span>o</span><span>v</span><span>a</span>
-    </h1>
-      <!-- Navigation -->
-      <nav>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#photography">Photography</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="header-content">
+        <h1>
+          <span>j</span><span>u</span><span>s</span><span>t</span><span>i</span
+          ><span>n</span>
+          <span> </span>
+          <span>c</span><span>o</span><span>r</span><span>d</span><span>o</span
+          ><span>v</span><span>a</span>
+        </h1>
+        <!-- Navigation -->
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#photography">Photography</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="mac-controls">
+        <a href="index.html" class="mac-circle red-circle"></a>
+        <a href="index.html" class="mac-circle yellow-circle"></a>
+        <a href="index.html" class="mac-circle green-circle"></a>
+      </div>
     </header>
 
     <!-- Main content -->
     <main>
-      <div class="content">
-        <!-- Thin Rectangle Pause/Play Button -->
-        <div class="controls">
-          <div id="play-pause-button" onclick="togglePlayPause()"></div>
-        </div>
-
-        <div class="song-list">
-          <div
-            class="song-item"
-            onclick="playSong('audio/Pretty Girls Make Graves - The Smiths.mp3')"
-          >
-            <img src="img/PrettyGirlsMakeGraves.jpeg" alt="Song Art 1" class="song-art" />
-          </div>
-          <div
-            class="song-item"
-            onclick="playSong('audio/Her - The American Dawn.mp3')"
-          >
-            <img src="img/Her.jpeg" alt="Song Art 2" class="song-art" />
-          </div>
-          <div
-            class="song-item"
-            onclick="playSong('audio/Wish - Trippie Redd.mp3')"
-          >
-            <img src="img/Wish.jpeg" alt="Song Art 3" class="song-art" />
-          </div>
-        </div>
-      </div>
+      <!-- About Section -->
+      <section class="default" id="start">
+        <h2>hi, i'm justin</h2>
+        <p>
+          I'm a software engineer seeking an internship to develop my
+          programming skills.
+          <br />
+          <br />
+          I love making games and online applications.
+        </p>
+      </section>
+      <!-- About Section -->
+      <section class="default" id="about me">
+        <h2>About Me</h2>
+        <p>I am currently pursing a BS CS @NJIT.</p>
+      </section>
+      <!-- Projects Section -->
+      <section class="default" id="projects">
+        <h2>Projects</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          lacinia odio vitae vestibulum. Cras vehicula, massa a interdum
+          facilisis, felis massa bibendum nulla, ut bibendum nunc elit in purus.
+          Morbi a turpis at libero placerat cursus. Ut aliquet arcu sed turpis
+          tempus, sit amet tincidunt est ultricies. Curabitur euismod magna et
+          est feugiat, non fringilla eros fermentum.
+        </p>
+      </section>
+      <!-- Experience Section -->
+      <section class="default" id="experience">
+        <h2>Experience</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          lacinia odio vitae vestibulum. Cras vehicula, massa a interdum
+          facilisis, felis massa bibendum nulla, ut bibendum nunc elit in purus.
+          Morbi a turpis at libero placerat cursus. Ut aliquet arcu sed turpis
+          tempus, sit amet tincidunt est ultricies. Curabitur euismod magna et
+          est feugiat, non fringilla eros fermentum.
+        </p>
+      </section>
+      <!-- Photography Section -->
+      <section class="default" id="photography">
+        <h2>Photogprahy</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          lacinia odio vitae vestibulum. Cras vehicula, massa a interdum
+          facilisis, felis massa bibendum nulla, ut bibendum nunc elit in purus.
+          Morbi a turpis at libero placerat cursus. Ut aliquet arcu sed turpis
+          tempus, sit amet tincidunt est ultricies. Curabitur euismod magna et
+          est feugiat, non fringilla eros fermentum.
+        </p>
+      </section>
     </main>
 
     <!-- Footer section -->
     <footer>
-      <p>&copy; 2024 Justin Cordova</p>
+      <p>Built and Designed by Justin Cordova.</p>
+      <br />
+      <p>All rights reserved. &copy;</p>
     </footer>
 
     <!-- Hidden audio player -->
-    <audio
-      id="audio-player"
-      style="display: none"
-    ></audio>
+    <audio id="audio-player" style="display: none"></audio>
 
     <!-- External JavaScript file -->
     <script src="script.js"></script>

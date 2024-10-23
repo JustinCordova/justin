@@ -41,3 +41,4 @@ function togglePlayPause() {
 });
 
 }
+// Function to check if scrolled to the bottom

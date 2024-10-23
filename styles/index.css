@@ -1,0 +1,174 @@
+/* General styling */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Align everything to the top left */
+  min-height: 100%;
+  overflow-y: auto;
+  background-color: #1a1b26;
+}
+
+/* Scrollbar styling  */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; 
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1b26;
+} 
+
+/* Header styling */
+header {
+  background-size: 100%;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+header h1 {
+  color: #9aa5ce;
+  font-family: "Dancing Script", cursive;
+  font-size: 36px;
+  margin-top: 0;
+  position: fixed;
+  left: 110px;
+  top: 5px;
+  z-index: 2;
+}
+
+header h1 span {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+header h1 span:hover {
+  transform: translateY(-5px);
+  color: #f7768e;
+}
+.header-bg {
+  width: 100%; /* Full width */
+  height: 60px; /* Adjust height as needed */
+  background-color: #1a1b26; /* Dark background color */
+  position: fixed; /* Fixed position under header */
+  top: 0px; /* Position it right below the header (adjust based on header height) */
+  left: 0; /* Align it to the left */
+  z-index: 0; /* Ensure it stays below the header */
+}
+
+/* Navigation menu styling */
+nav {
+  position: fixed; /* Use absolute positioning */
+  top: 23px; /* Adjust to move it down from the top */
+  left: 315px; /* Center the nav horizontally */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Align navigation items in a row */
+}
+
+nav ul li {
+  margin-right: 20px; /* Space between items */
+}
+
+nav ul li a {
+  font-family: "Cabin", sans-serif;
+  font-size: 14px;
+  color: #9aa5ce;
+  text-decoration: none;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f7768e; /* Change color to dark red on hover */
+}
+
+#mac-controls {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  gap: 10px; /* Space between the circles */
+  z-index: 1000; /* Keeps them on top of other content */
+}
+
+.mac-circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%; /* Make the element a circle */
+  cursor: pointer; /* Indicate that they are clickable */
+}
+
+.red-circle {
+  background-color: #ff5f57; /* macOS red button color */
+}
+
+.yellow-circle {
+  background-color: #ffbd2e; /* macOS yellow button color */
+}
+
+.green-circle {
+  background-color: #28c840; /* macOS green button color */
+}
+
+.mac-circle:hover {
+  opacity: 0.8; /* Slightly reduce opacity on hover to show interactivity */
+}
+
+/* Main Content Styles */
+main {
+  flex: 1;
+}
+
+/* About Section Styling */
+.default {
+  font-family: "Cabin", sans-serif;
+  max-width: 800px; /* Maximum width for the section */
+  margin: 50px auto; /* Center the section with auto margins */
+  padding: 20px; /* Padding inside the section */
+  margin-top: 50px;
+  margin-left: 400px;
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+  border-radius: 8px; /* Rounded corners */
+  color: white; /* Text color */
+}
+
+/* About Section Heading */
+.default h2 {
+  color: #9aa5ce;
+  font-size: 36px; /* Size of the heading */
+  margin-bottom: 50px; /* Space below the heading */
+}
+
+/* About Section Paragraph */
+.default p {
+  font-size: 21px; /* Size of the paragraph text */
+  max-width: 600px; /* Max width for readability */
+}
+.default:first-of-type {
+  margin-top: 100px; /* Adjust this value to reduce the space */
+}
+
+/* Footer styling */
+footer {
+  font-family: "Cabin", sans-serif;
+  font-size: 12px;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the text if needed */
+  width: 100%; /* Takes full width */
+  text-align: center; /* Centers text */
+  padding: 1em 0; /* Adds some vertical padding */
+  color: white; /* Text color */
+}

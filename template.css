@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: flex-start; /* Align content to the top of the page */
+    height: 100vh; /* Full height of the viewport */
+    margin: 0;
+    overflow: hidden;
+    background-color: #a83246;
+    background-size: cover;
+}
+
+/* Header styling */
+header {
+    width: 100%; /* Take full width of the page */
+    background: transparent;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    top: 0; /* Ensure header is positioned at the top */
+}
+
+/* Center the name/title */
+header h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 48px;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+  
+  header h1 span {
+    display: inline-block; /* Allow the letters to be transformed individually */
+    transition: transform 0.2s ease; /* Smooth transition for the rising effect */
+  }
+  
+  header h1 span:hover {
+    transform: translateY(-5px); /* Rise up slightly on hover */
+  }
+/* Navigation menu styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center-top;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    font-family: "Cabin", sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+  }
+  
+  nav ul li a:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+      0 0 20px rgba(255, 255, 255, 0.6); /* Glowing text effect */
+  }
+
+  #mac-controls {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 10px; /* Space between the circles */
+    z-index: 1000; /* Keeps them on top of other content */
+}
+
+.mac-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; /* Make the element a circle */
+    cursor: pointer; /* Indicate that they are clickable */
+}
+
+.red-circle {
+    background-color: #ff5f57; /* macOS red button color */
+}
+
+.yellow-circle {
+    background-color: #ffbd2e; /* macOS yellow button color */
+}
+
+.green-circle {
+    background-color: #28c840; /* macOS green button color */
+}
+
+.mac-circle:hover {
+    opacity: 0.8; /* Slightly reduce opacity on hover to show interactivity */
+}
+
+  /* Main content styling */
+  main {
+    padding: 20px;
+    z-index: 1;
+    position: relative;
+    color: white;
+    flex-grow: 1; /* Ensures main content takes up available space */
+  }
