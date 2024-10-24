@@ -2,7 +2,7 @@
 
 I'm [**Justin**](https://justincordova.pages.dev/), a software engineer from Stewartsville, New Jersey.
 
-I'm primarily interested in **full-stack development** and currently pursing a BS CS @ [**@NJIT**]. 📌 
+I'm primarily interested in **full-stack development** and currently pursing a BS CS @ [**@NJIT**]. 📌
 
 xxx
 
@@ -10,6 +10,7 @@ Outside of work, I'm interested in following the developments of science and tec
 and playing tennis!
 
 #### Let's connect!
+
 [<img alt="Medium" src="https://img.shields.io/badge/Medium-%23000000.svg?&style=for-the-badge&logo=Medium&logoColor=white" />](https://medium.com/@justinavodroc)
 [<img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-%230E76A8.svg?&style=for-the-badge&logo=LinkedIn&logoColor=white" />](https://www.linkedin.com/in/justinalolorcordova/)
 
@@ -25,8 +26,8 @@ and playing tennis!
 
 ## 🎨 color codes - tokyo night
 
-| Color          | Hex                                                                |
-| -------------- | ------------------------------------------------------------------ |
-| Dark Blue      | ![#1a1b26](https://via.placeholder.com/10/1a1b26?text=+) `#1a1b26` |
-| Light Red      | ![#f7768e](https://via.placeholder.com/10/f7768e?text=+) `#f7768e` |
-| Light Grey     | ![#9aa5ce](https://via.placeholder.com/10/9aa5ce?text=+) `#9aa5ce` |
+| Color      | Hex                                                                |
+| ---------- | ------------------------------------------------------------------ |
+| Dark Blue  | ![#1a1b26](https://via.placeholder.com/10/1a1b26?text=+) `#1a1b26` |
+| Light Red  | ![#f7768e](https://via.placeholder.com/10/f7768e?text=+) `#f7768e` |
+| Light Grey | ![#9aa5ce](https://via.placeholder.com/10/9aa5ce?text=+) `#9aa5ce` |
