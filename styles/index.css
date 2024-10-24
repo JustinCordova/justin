@@ -243,17 +243,16 @@ main {
   margin: 0 auto; /* Centers the image horizontally */
   transition: transform 0.3s ease;
   display: block; /* Ensure it's a block element */
-  pointer-events: auto;
-}
-
-.about-image:hover {
   pointer-events: none;
 }
+.about-image:hover {
+  transform: scale(1.5);
+}
+Make a square that covers about-image, under it, when its hovered, transform about-image
 
 .scaled {
   transform: scale(1.5); /* Scale image to 1.5 times its size */
 }
-
 
 /* Footer styling */
 footer {
