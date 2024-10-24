@@ -224,6 +224,15 @@ main {
   text-align: center;
 }
 
+.image-container {
+  display: flex; /* Center the image container */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  text-align: center;
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+}
+
 .about-image {
   width: 275px; /* Adjust as needed */
   height: 275px; /* Adjust as needed */
@@ -244,6 +253,7 @@ main {
 .scaled {
   transform: scale(1.5); /* Scale image to 1.5 times its size */
 }
+
 
 /* Footer styling */
 footer {
