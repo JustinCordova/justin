@@ -117,7 +117,7 @@ nav ul li a:hover {
 }
 
 .social-links img:hover {
-  color: #f7768e;
+  filter: brightness(0) saturate(100%) invert(67%) sepia(75%) saturate(700%) hue-rotate(360deg) brightness(95%) contrast(90%);
 }
 
 #mac-controls {
