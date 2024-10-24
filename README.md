@@ -2,7 +2,7 @@
 
 I'm [**Justin**](https://justincordova.pages.dev/), a software engineer from Stewartsville, New Jersey.
 
-I'm primarily interested in **full-stack development** and currently pursing a BS CS @ [**@NJIT**]. 📌
+I'm primarily interested in **full-stack development** and currently pursing a BSCS [**@NJIT**]. 📌
 
 xxx
 
