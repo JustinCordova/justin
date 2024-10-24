@@ -7,3 +7,11 @@
 <p align="center">
   The first iteration of <a href="https://justincordova.pages.dev" target="_blank">justincordova.pages.dev</a>
 </p>
+
+## 🎨 color codes - tokyo night
+
+| Color          | Hex                                                                |
+| -------------- | ------------------------------------------------------------------ |
+| Dark Blue      | ![#1a1b26](https://via.placeholder.com/10/1a1b26?text=+) `#1a1b26` |
+| Light Red      | ![#f7768e](https://via.placeholder.com/10/f7768e?text=+) `#f7768e` |
+| Light Grey     | ![#9aa5ce](https://via.placeholder.com/10/9aa5ce?text=+) `#9aa5ce` |
