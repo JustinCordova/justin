@@ -238,8 +238,11 @@ main {
 }
 
 .about-image:hover {
-  transform: scale(1.5);
-  overflow: hidden;
+  pointer-events: none;
+}
+
+.scaled {
+  transform: scale(1.5); /* Scale image to 1.5 times its size */
 }
 
 /* Footer styling */

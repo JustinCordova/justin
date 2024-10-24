@@ -42,3 +42,16 @@ function togglePlayPause() {
 
 }
 // Function to check if scrolled to the bottom
+document.addEventListener('DOMContentLoaded', function() {
+  const image = document.querySelector('.about-image');
+
+  image.addEventListener('click', function() {
+      // Add the scaled class on click
+      image.classList.add('scaled');
+
+      // Set a timeout to remove the scaled class after 5 seconds (5000 ms)
+      setTimeout(function() {
+          image.classList.remove('scaled');
+      }, 5000);
+  });
+});
