@@ -1,0 +1,159 @@
+/* Ensure the body takes the full height and centers the content */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1b26; /* Same background color as index.html */
+}
+
+/* Style the image */
+img {
+    max-width: 100%;  /* Limit the width to 80% of the viewport */
+    max-height: 90%; /* Limit the height to 90% of the viewport */
+    object-fit: contain; /* Ensure the image maintains its aspect ratio */
+}
+/* Scrollbar styling  */
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #1a1b26;
+  }
+  
+  /* Header styling */
+  header {
+    background-size: 100%;
+    color: white;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  header h1 {
+    color: #9aa5ce;
+    font-family: "Dancing Script", cursive;
+    font-size: 36px;
+    margin-top: 0;
+    position: fixed;
+    left: 110px;
+    top: 5px;
+    z-index: 2;
+  }
+  
+  header h1 span {
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+  
+  header h1 span:hover {
+    transform: translateY(-5px);
+    color: #f7768e;
+  }
+  .header-bg {
+    width: 100%; /* Full width */
+    height: 60px; /* Adjust height as needed */
+    background-color: #1a1b26; /* Dark background color */
+    position: fixed; /* Fixed position under header */
+    top: 0px; /* Position it right below the header (adjust based on header height) */
+    left: 0; /* Align it to the left */
+    z-index: 0; /* Ensure it stays below the header */
+  }
+  
+  /* Navigation menu styling */
+  nav {
+    position: fixed; /* Use absolute positioning */
+    top: 23px; /* Adjust to move it down from the top */
+    left: 315px; /* Center the nav horizontally */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Align navigation items in a row */
+  }
+  
+  nav ul li {
+    margin-right: 20px; /* Space between items */
+  }
+  
+  nav ul li a {
+    font-family: "Cabin", sans-serif;
+    font-size: 14px;
+    color: #9aa5ce;
+    text-decoration: none;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #f7768e;
+  }
+  
+  /* Social Links Styling */
+  .social-links {
+    position: fixed;
+    top: 0px; /* Adjust the top position */
+    right: 20px; /* Align to the right of the screen */
+    list-style-type: none;
+    display: flex;
+    flex-direction: row; /* Changed to row for horizontal layout */
+    gap: 10px; /* Space between icons */
+  }
+  
+  .social-links li {
+    margin: 0;
+  }
+  
+  .social-links img {
+    width: 30px; /* Adjust the size of icons */
+    height: 30px; /* Adjust the size of icons */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-links img:hover {
+    color: #f7768e;
+  }
+  
+  #mac-controls {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 10px; /* Space between the circles */
+    z-index: 1000; /* Keeps them on top of other content */
+  }
+  
+  .mac-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; /* Make the element a circle */
+    cursor: pointer; /* Indicate that they are clickable */
+  }
+  
+  .red-circle {
+    background-color: #ff5f57; /* macOS red button color */
+  }
+  
+  .yellow-circle {
+    background-color: #ffbd2e; /* macOS yellow button color */
+  }
+  
+  .green-circle {
+    background-color: #28c840; /* macOS green button color */
+  }
+  
+  .mac-circle:hover {
+    opacity: 0.8; /* Slightly reduce opacity on hover to show interactivity */
+  }
