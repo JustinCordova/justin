@@ -8,6 +8,10 @@ body {
   background-color: #1a1b26;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Scrollbar styling  */
 ::-webkit-scrollbar {
   width: 6px;
