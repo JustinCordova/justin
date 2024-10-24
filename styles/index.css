@@ -229,13 +229,15 @@ main {
 }
 
 .image-container {
-  display: flex; /* Center the image container */
-  justify-content: center; /* Center the image horizontally */
-  align-items: center; /* Center the image vertically */
-  text-align: center;
-  margin: 0; /* Reset margin */
-  padding: 0; /* Reset padding */
+  width: 275px; /* Adjust as needed */
+  height: 275px; /* Adjust as needed */
+  object-fit: cover;
+  border-radius: 8px; /* Optional: for rounded corners */
+  margin-top: 0px; /* Optional: adjust top margin if needed */
+  display: block; /* Makes the image a block-level element */
+  margin: 0 auto; /* Centers the image horizontally */
   transition: transform 0.3s ease;
+  display: block; /* Ensure it's a block element */
 }
 .image-container:hover {
   transform: scale(1.5);
