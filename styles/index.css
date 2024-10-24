@@ -118,24 +118,23 @@ nav ul li a:hover {
 
 /* Hover effect for Email icon */
 .social-links .email-icon:hover {
-  content: url('../assets/img/email-icon-red.png');
+  content: url("../assets/img/email-icon-red.png");
 }
 
 /* Hover effect for LinkedIn icon */
 .social-links .linkedin-icon:hover {
-  content: url('../assets/img/linkedin-icon-red.png');
+  content: url("../assets/img/linkedin-icon-red.png");
 }
 
 /* Hover effect for GitHub icon */
 .social-links .github-icon:hover {
-  content: url('../assets/img/github-icon-red.png');
+  content: url("../assets/img/github-icon-red.png");
 }
 
 /* Hover effect for Resume icon */
 .social-links .resume-icon:hover {
-  content: url('../assets/img/resume-icon-red.png');
+  content: url("../assets/img/resume-icon-red.png");
 }
-
 
 #mac-controls {
   position: fixed;
@@ -233,6 +232,14 @@ main {
   margin-top: 0px; /* Optional: adjust top margin if needed */
   display: block; /* Makes the image a block-level element */
   margin: 0 auto; /* Centers the image horizontally */
+  transition: transform 0.3s ease;
+  display: block; /* Ensure it's a block element */
+  pointer-events: auto;
+}
+
+.about-image:hover {
+  transform: scale(1.5);
+  overflow: hidden;
 }
 
 /* Footer styling */
