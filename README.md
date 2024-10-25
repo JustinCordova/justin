@@ -5,7 +5,7 @@
   justincordova.pages.dev - v1.0.
 </h1>
 <p align="center">
-  The first iteration of <a href="https://justincordova.pages.dev" target="_blank">justincordova.pages.dev</a>
+  Early stage of <a href="https://justincordova.pages.dev" target="_blank">justincordova.pages.dev</a>
 </p>
 
 ## 🎨 color codes - tokyo night
