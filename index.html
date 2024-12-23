@@ -4,35 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Justin Cordova</title>
+    <!-- Web Icon -->
     <link
       rel="shortcut icon"
       type="image/x-icon"
       href="assets/img/favicon.jpeg"
     />
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/slicknav.min.css" />
     <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script>
+      $(function () {
+        $("#nav-menu").slicknav();
+      });
+    </script>
   </head>
   <!-- Header Background -->
-  <div class="header-bg"></div>
 
   <body id="home">
-    <!-- Header -->
-    <header>
-      <div class="header-content">
-        <h1>
-          <span>j</span><span>u</span><span>s</span><span>t</span><span>i</span
-          ><span>n</span>
-          <span> </span>
-          <span>c</span><span>o</span><span>r</span><span>d</span><span>o</span
-          ><span>v</span><span>a</span>
-        </h1>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div>
         <!-- Navigation -->
         <nav>
-          <ul>
+          <ul id="nav-menu">
+            <li id="name">
+              <a href="index.html">
+                <span class="highlight">Justin Cordova</span>
+              </a>
+            </li>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#photography">Photography</a></li>
           </ul>
         </nav>
       </div>
@@ -73,27 +84,18 @@
             />
           </a>
         </li>
-        <li>
-          <a href="resume.html">
-            <img
-              src="assets/img/resume-icon.png"
-              alt="Resume"
-              class="social-icon resume-icon"
-            />
-          </a>
-        </li>
       </ul>
-    </header>
+    </div>
 
-    <!-- Main content -->
+    <!-- Main -->
     <main>
       <!-- About Section -->
-      <section class="default" id="start">
+      <section class="home" id="start">
         <div class="image-container">
           <img
             src="assets/img/jusy.jpg"
             alt="jusy"
-            class="about-image"
+            class="home-image"
             draggable="false"
             title=""
           />
@@ -103,43 +105,46 @@
           I'm a software engineer seeking an internship to develop my
           programming skills.
           <br />
-          I love making python games and online applications.
+          I makes games and systems/web applications.
         </p>
       </section>
 
       <!-- About Section -->
-      <section class="default" id="about">
+      <section class="default" id="aboutme">
         <h2>About Me</h2>
         <p>
-          I am currently pursing a BS CS @NJIT. I'm 19 years old, I enjoy
-          playing video games and sports, and learning about technology. Also,
-          fun fact, I'm Filipino!
+          I am currently pursing a BS CS @NJIT. I'm 19 years old.
         </p>
         <br />
         <p>
-          I have the most georgeous girlfriend, two amazing parents, and a
-          younger brother.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <br />
         <br />
-        Current Technologies:
+        <p style="font-weight: bold; font-size:20px;">Current Technologies:</p>
         <!-- Skill icons section -->
         <br />
         <br />
         <a href="https://skillicons.dev">
           <img
-            src="https://skillicons.dev/icons?i=html,css,js,bootstrap,cpp,c,java,python,php"
+            src="https://skillicons.dev/icons?i=python,java,cpp,c,js,php,bootstrap"
             alt="My Skills"
           />
         </a>
         <br />
         <br />
-        Currently Learning:
+        <p style="font-weight: bold; font-size:20px;">Currently Learning:</p>
         <br />
         <br />
         <a href="https://skillicons.dev">
           <img
-            src="https://skillicons.dev/icons?i=htmx,go,react,nextjs,dart,flutter,rust"
+            src="https://skillicons.dev/icons?i=django,htmx,go,react,nextjs,nodejs,mysql"
             alt="Learning"
           />
         </a>
@@ -152,7 +157,7 @@
       <!-- Experience Section -->
       <section class="default" id="experience">
         <h2>Experience</h2>
-        <ul>
+        <ul class="exp">
           <li>
             <strong>TNT Fireworks Associate</strong>
             <br />
@@ -183,12 +188,6 @@
           </li>
         </ul>
       </section>
-      <!-- Photography Section -->
-      <section class="default" id="photography">
-        <h2>Photogprahy</h2>
-        <div class="album-gallery"></div>
-      </section>
-    </main>
 
     <!-- Footer section -->
     <footer>
@@ -199,6 +198,12 @@
     <!-- Hidden audio player -->
     <audio id="audio-player" style="display: none"></audio>
 
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <!-- External JavaScript file -->
     <script src="script.js"></script>
   </body>

@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Cabin&display=swap');
 
 html {
@@ -9,7 +8,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
+  overflow-x: hidden;
   background-color: #1a1b26;
 }
 
@@ -31,222 +30,63 @@ body {
   background: #1a1b26;
 }
 
-/* Header styling */
-header {
-  background-size: 100%;
-  color: white;
-  text-align: center;
-  z-index: 1;
-}
-
-header h1 {
-  color: #9aa5ce;
-  font-family: "Dancing Script", cursive;
-  font-size: 36px;
-  margin-top: 0;
-  position: fixed;
-  left: 110px;
-  top: 5px;
-  z-index: 2;
-}
-
-header h1 span {
-  display: inline-block;
-  transition: transform 0.2s ease;
-}
-
-header h1 span:hover {
-  transform: translateY(-5px);
-  color: #f7768e;
-}
-.header-bg {
-  width: 100%;
-  height: 60px;
-  background-color: #1a1b26;
-  position: fixed;
-  top: 0px;
-  left: 0;
-  z-index: 0;
-}
-
-/* Navigation menu styling */
-nav {
-  position: fixed;
-  top: 23px;
-  left: 315px;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-nav ul li {
-  margin-right: 20px;
-}
-
-nav ul li a {
-  font-family: "Cabin", sans-serif;
-  font-size: 14px;
-  color: #9aa5ce;
-  text-decoration: none;
-  transition: transform 0.3s ease, text-shadow 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #f7768e;
-}
-
-/* Social Links Styling */
-.social-links {
-  position: fixed;
-  top: 0px;
-  right: 20px;
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-
-.social-links li {
-  margin: 0;
-}
-
-.social-links img {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-/* Hover effect for Contacts/Socials */
-.social-links .email-icon:hover {
-  content: url("../assets/img/email-icon-red.png");
-}
-
-.social-links .linkedin-icon:hover {
-  content: url("../assets/img/linkedin-icon-red.png");
-}
-
-.social-links .github-icon:hover {
-  content: url("../assets/img/github-icon-red.png");
-}
-
-.social-links .resume-icon:hover {
-  content: url("../assets/img/resume-icon-red.png");
-}
-
-/* Mac Controls Styling */
-#mac-controls {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  display: flex;
-  gap: 10px;
-  z-index: 1000;
-}
-
-.mac-circle {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.red-circle {
-  background-color: #ff5f57;
-}
-
-.yellow-circle {
-  background-color: #ffbd2e;
-}
-
-.green-circle {
-  background-color: #28c840;
-}
-
-.mac-circle:hover {
-  opacity: 0.8;
-}
-
 /* Main Content Styles */
 main {
+  margin: 0 auto;
   flex: 1;
+  font-family: "Cabin", sans-serif;
 }
 .highlight {
   color: #f7768e !important;
 }
 
 /* About Section Styling */
-.default {
+.home {
   font-family: "Cabin", sans-serif;
+  margin: 0 auto;
   max-width: 800px;
-  margin: 50px auto;
-  padding: 20px;
-  margin-top: -65px;
-  margin-left: 200px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
   border-radius: 8px;
   color: white;
 }
 
 /* About Section Heading */
-.default h2 {
+.home h2 {
   color: #9aa5ce;
   font-size: 36px;
-  margin-bottom: 50px;
 }
 
 /* About Section Paragraph */
-.default p {
+.home p {
+  margin: 0 auto;
   color: lightgrey;
   font-size: 21px;
-  max-width: 600px;
-}
-
-.default:first-of-type {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  max-width: 800px;
-  text-align: center;
-}
-
-/* Centering the first paragraph block */
-.default:first-of-type p {
-  text-align: center;
-  margin: 0 auto;
   max-width: 600px;
 }
 
 .hello {
   font-size: 80px !important;
   color: #9aa5ce;
-  margin-bottom: 50px;
   text-align: center;
-  white-space: nowrap; /* Prevent text from wrapping */
-  overflow: hidden; /* Hide overflow */
 }
 
+/* Home Image Styling */
 .image-container {
+  margin: 0 auto;
   width: 275px;
   height: 275px;
   object-fit: cover;
   border-radius: 8px;
-  margin-top: 0px;
-  display: block;
-  margin: 0 auto;
   transition: transform 0.3s ease;
-  display: block;
 }
 
 .image-container:hover {
-  transform: scale(1.5);
+  transform: scale(1.4);
 }
 
-.about-image {
+.home-image {
   width: 275px;
   height: 275px;
   object-fit: cover;
@@ -259,26 +99,41 @@ main {
   pointer-events: none;
 }
 
+.default {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  color: lightgrey;
+}
+
+.default h2{
+  font-size: 50px;
+}
+
 /* Projects Section Background*/
 .projects {
+  margin: 0 auto;
   width: 500px;
   height: 300px;
   background-color: #8d93a7;
   border-radius: 20px;
 }
 
-/* Album Section Background */
-.album-gallery {
-  width: 300px;
-  height: 300px;
-  background-color: #8d93a7;
-  border-radius: 20px;
+/* Experience List */
+.exp {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
 }
+
+.exp li {
+  margin-bottom: 20px;
+}
+
 
 /* Footer styling */
 footer {
-  font-family: "Cabin", sans-serif;
-  font-size: 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -290,6 +145,8 @@ footer {
 }
 
 footer p {
+  font-family: "Cabin", sans-serif;
+  font-size: 12px;
   color: grey;
   margin: 0;
   padding: 5px;
